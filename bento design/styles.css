@@ -1,0 +1,137 @@
+/* Estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-style: normal;
+  font-weight: 500;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-color: rgb(17, 16, 16);
+  color: rgb(160, 160, 160);
+ 
+}
+header {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo */
+  top: 0; /* Posiciona o cabeçalho no topo da página */
+  left: 0;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+ 
+}
+ 
+
+header nav {
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2.5rem;
+}
+
+header li {
+  margin-top: 2px;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+}
+
+header li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff; /* Mantém o texto dos links branco */
+}
+
+.container {
+  width: 50%;
+
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  color: #ffffff;
+  margin: 50px 0 10px 0;
+}
+
+h4 {
+  margin: 50px 0 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+/* CSS EXEMPLO */
+
+.containerExemplo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px; /* Define a altura padrão das linhas */
+  gap: 20px;
+  color: #fff;
+}
+
+.item1 {
+  background-color: #494949;
+  padding: 20px;
+  text-align: center;
+  grid-row: span 2; /* Ocupa duas linhas */
+}
+
+.item2 {
+  background-color: #494949;
+  padding: 20px;
+  text-align: center;
+  grid-column: span 2; /* Ocupa duas colunas */
+  grid-row: span 2; /* Ocupa duas linhas */
+}
+
+.item3 {
+  background-color: #494949;
+  padding: 20px;
+  text-align: center;
+  grid-column: span 3; /* Ocupa três colunas */
+}
