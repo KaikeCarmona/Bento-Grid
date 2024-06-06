@@ -103,6 +103,13 @@ a:hover {
 }
 
 @media (max-width: 900px) {
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
   nav ul {
     display: none;
   }
