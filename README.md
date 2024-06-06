@@ -25,15 +25,16 @@ O projeto Bento Grid foi feito utilizando conceitos de grid, focando apenas no f
 
 ## Instalação
 ```bash
- git clone https://github.com/KaikeCarmona/Cronometro/tree/main
+ git clone https://github.com/KaikeCarmona/Bento-Grid.git
  code .
 ```
 ## Tecnologias
-- Python
-- Tkinter
+- HTML
+- CSS
+- JS
 
 ## ✅ Demonstração 
-https://github.com/KaikeCarmona/Cronometro/assets/105160112/1096b015-0715-4d19-8b46-e3709f715e69
+https://bento-grid-sandy.vercel.app
 
 
  
