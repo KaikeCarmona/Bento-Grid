@@ -13,22 +13,58 @@
     />
   </head>
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navToggle = document.querySelector(".nav-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        navToggle.addEventListener("click", () => {
+          sidebar.classList.toggle("show");
+        });
+      });
+    </script>
+
     <header id="teste">
       <nav>
         <ul>
-          <p><a href="../index.html">Bento Grid</a></p>
+          <p
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <img
+              style="width: 50px; height: 50px"
+              src="../img/Group 1.png"
+              alt=""
+              class="header-logo"
+            />
+            <a href="../index.html" class="header-title">Bento Grid</a>
+          </p>
         </ul>
-        <ul>
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./index.html">Bento Grid</a></li>
-          <li><a href="pagina3.html">Sei lá</a></li>
+          <li><a href="../bento design/index.html">Bento Grid</a></li>
+          <li><a href="../Todo/index.html">Sei lá</a></li>
         </ul>
+        <button class="nav-toggle">
+          <img src="../img/Group 1.png" alt="Menu" />
+        </button>
       </nav>
     </header>
 
+    <div class="sidebar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./bento design/index.html">Bento Grid</a></li>
+        <li><a href="./Todo/index.html">Sei lá</a></li>
+      </ul>
+    </div>
     <div class="container">
       <section>
-        <h1 style="font-size: 5rem; color: #fff">Oque é Bento Grid?</h1>
+        <h1 style="font-size: 5rem;">Oque é Bento Grid?</h1>
       </section>
       <section>
         <p>

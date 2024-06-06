@@ -7,72 +7,118 @@
 
 html,
 body {
-  font-style: normal;
+  font-family: "Poppins";
   font-weight: 500;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins";
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  height: 80vh;
-  background-color: rgb(17, 16, 16);
-  color: rgb(160, 160, 160);
- 
+  height: 80vh;  
 }
+
+/* Header */
 header {
-  font-family: "Poppins", sans-serif;
   width: 100%;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo */
-  top: 0; /* Posiciona o cabeçalho no topo da página */
-  left: 0;
-  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
- 
-}
- 
-
-header nav {
-  width: 94%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header ul {
+  height: 10vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
   flex-direction: row;
-  list-style-type: none;
-  gap: 2.5rem;
+  justify-content: space-between;
+  width: 66%;
 }
 
-header li {
-  margin-top: 2px;
-  width: 7rem;
-  height: 2rem;
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.nav-links li {
+  list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: 500ms;
 }
 
-header li:hover {
-  transform: scale(1.1);
-}
+ 
 
 a {
   text-decoration: none;
-  color: #fff; /* Mantém o texto dos links branco */
+  color: #000;
+  transition: 200ms;
 }
+
+a:hover {
+  color: #c4b2e8;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 50px;
+  height: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #494949;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .header-logo {
+    width: 30px;
+  }
+}
+
+
+
 
 .container {
   width: 50%;
-
   margin: 20px auto;
   padding: 0 20px;
 }
@@ -86,8 +132,7 @@ h3 {
 }
 
 h2 {
-  color: #ffffff;
-  margin: 50px 0 10px 0;
+   margin: 50px 0 10px 0;
 }
 
 h4 {
@@ -96,8 +141,8 @@ h4 {
 
 footer {
   background-color: #333;
-  color: white;
-  text-align: center;
+  color: #fff;
+   text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;

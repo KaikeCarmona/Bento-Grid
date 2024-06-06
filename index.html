@@ -3,41 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bento Grid Design</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <title>Document</title>
   </head>
   <body>
-    <header>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navToggle = document.querySelector(".nav-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        navToggle.addEventListener("click", () => {
+          sidebar.classList.toggle("show");
+        });
+      });
+    </script>
+
+    <header id="teste">
       <nav>
         <ul>
-          <p><a href="../index.html">Bento Grid</a></p>
+          <p
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <img
+              style="width: 50px; height: 50px"
+              src="./img/Group 1.png"
+              alt=""
+              class="header-logo"
+            />
+            <a href="../index.html" class="header-title">Bento Grid</a>
+          </p>
         </ul>
-        <ul>
+        <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./bento design/index.html">Bento Grid</a></li>
-          <li><a href="pagina3.html">Sei lá</a></li>
+          <li><a href="./Todo/index.html">Sei lá</a></li>
         </ul>
+        <button class="nav-toggle">
+          <img src="./img/Group 1.png" alt="Menu" />
+        </button>
       </nav>
     </header>
-    <div class="bento-grid">
-      <div class="item large">Item 1</div>
-      <div class="item top">Item 2</div>
-      <div class="item tall">Item 3</div>
-      <div class="item time">
-        <p style="font-size: 1.3rem">Horario de brasilia</p>
-        <p class="horario"></p>
-      </div>
-      <div class="item botton">Item 5</div>
-      <div class="item botton medium">Item 6</div>
-      <div class="item under">Item 7</div>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./bento design/index.html">Bento Grid</a></li>
+        <li><a href="./Todo/index.html">Sei lá</a></li>
+      </ul>
     </div>
 
-    <script src="script.js"></script>
+    <div class="tudo">
+      <div class="content">
+        <div class="bento-grid">
+          <div
+            class="item"
+            id="item1"
+            style="
+              background-color: #c4b2e8;
+              color: #50215f;
+              background-image: url(img/oloco.png);
+              background-size: cover;
+              background-position: -80px 130px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Disposição Bidimensional</h1>
+            <p>Ideal para criar layouts complexos que exigem controle.</p>
+          </div>
+          <div
+            class="item"
+            id="item2"
+            style="
+              background-color: #f583a5;
+              color: #5f2150;
+              background-image: url(img/conta.png);
+              background-size: 50%;
+              background-position: 330px -10px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Alinhamento</h1>
+            <p>
+              Com Grid, é possível alinhar e distribuir <br />elementos de forma
+              precisa e eficiente.
+            </p>
+          </div>
+          <div
+            class="item"
+            id="item3"
+            style="
+              background-color: #b8cede;
+              color: #184263;
+              background-image: url(img/rola.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 0 -30px;
+            "
+          >
+            <h1>Estética</h1>
+            <p>
+              Criação fácil de designs simétricos e equilibrados, resultando em
+              layouts limpos e organizados. Isso melhora a legibilidade e a
+              experiência do usuário.
+            </p>
+          </div>
+          <div
+            class="item"
+            id="itemfodase"
+            style="
+              background-color: #c5d58e;
+              color: #1d461d;
+              background-image: url(img/flores.png);
+              background-position: -70px 70px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Complexidade</h1>
+            <p>O Grid pode ser excessivamente complexo para layouts simples.</p>
+          </div>
+          <div
+            class="item"
+            id="item4"
+            style="
+              background-color: #ffdf6f;
+              color: #4b401a;
+              background-image: url(img/papel.png);
+              background-size: 100%;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Suporte limitado</h1>
+            <p>
+              Alguns navegadores antigos não suportam completamente o CSS Grid.
+            </p>
+          </div>
+          <div
+            class="item"
+            id="item5"
+            style="
+              background-color: #f9a473;
+              color: #5b2718;
+              background-image: url(img/lendo.png);
+              background-size: 80%;
+              background-position: 210px 50px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Aprendizado</h1>
+            <p>
+              Sintaxe e conjunto de propriedades extensos, representando uma
+              curva de aprendizado íngreme para desenvolvedores iniciantes.
+            </p>
+            <p></p>
+          </div>
+          <div
+            class="item"
+            id="item6"
+            style="
+              background-color: #feb7fd;
+              color: #942f92;
+              background-image: url(img/iphonemobile.png);
+              background-position: 0 150px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1>Responsivo</h1>
+            <p>
+              Adapta automaticamente a disposição dos elementos em diferentes
+              tamanhos de tela.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2024 Bento Grid. Todos os direitos reservados.</p>
+      </footer>
+    </div>
   </body>
 </html>
