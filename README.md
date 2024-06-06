@@ -1,5 +1,5 @@
 
-<h1 align="center">time to sleep</h1>
+<h1 align="center">Bento Grid</h1>
 <h3 align="center">🚧 Finalizado 🚧</h3>
 
 <p align="center">
@@ -9,18 +9,18 @@
 </p>
 
 
-Cronômetro feito utilizando Python com o intuito de verificar se o usuário ainda está no computador após o timer chegar a 0. Caso o usuário demore mais de 5 segundos para responder, o programa finalizará as atividades do computador e irá desligá-lo
+
+Projeto feito com o intuito de treinar e demonstrar conceitos de Layout Bento Grid.
 
 ## 💻 Descrição 
-Esse projeto tem o intuito de facilitar a organização de tarefas com curto prazo de conclusão, podendo-se: 
-- Inserir uma nova tarefa.
-- Alterar os dados de uma tarefa.
-- Deletar uma tarefa.
+O projeto Bento Grid foi feito utilizando conceitos de grid, focando apenas no front end do site, nele abordamos conceitos de: 
+- Bento Grid Layout
+- Responsividade.
+- Html semantico.
 
 
 ## ⚙ Pré-requisitos
  - Ter o Git instalado na maquina
- - Ter o Python instalado na maquina
 
 
 ## Instalação
