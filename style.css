@@ -14,14 +14,13 @@ body {
 
 .content {
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
 }
-
-
-
 
 /* ----------------- Header ------------------- */
 header {
@@ -106,8 +105,7 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-
-  nav{
+  nav {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -128,11 +126,6 @@ a:hover {
 
 /* ------------------------------------ */
 
-
-
-
-
-
 /* Bento grid */
 .bento-grid {
   display: grid;
@@ -145,7 +138,7 @@ a:hover {
   margin: 0 50vw;
 
   height: 90%;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .item {
@@ -194,10 +187,11 @@ a:hover {
 footer {
   background-color: #333;
   color: #fff;
-   text-align: center;
+  text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
   padding: 15px 0 15px 0;
 }
 
@@ -230,8 +224,8 @@ footer {
   #item6 {
     grid-column: span 2;
   }
- 
-  .content{
+
+  .content {
     height: auto;
   }
 }
@@ -252,21 +246,11 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
- 
 
 body::-webkit-scrollbar-thumb {
-  background-color: #c4b2e8;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
- }
+  background-color: #c4b2e8; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
