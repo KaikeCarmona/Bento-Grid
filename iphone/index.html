@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navToggle = document.querySelector(".nav-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        navToggle.addEventListener("click", () => {
+          sidebar.classList.toggle("show");
+        });
+      });
+    </script>
+
+    <header id="teste">
+      <nav>
+        <ul>
+          <p
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <img
+              style="width: 50px; height: 50px"
+              src="../img/Group 1.png"
+              alt=""
+              class="header-logo"
+            />
+            <a href="../index.html" class="header-title">Bento Grid</a>
+          </p>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../bento design/index.html">Bento Grid</a></li>
+          <li><a href="./index.html">Sei lá</a></li>
+        </ul>
+        <button class="nav-toggle">
+          <img src="../img/Group 1.png" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../bento design/index.html">Bento Grid</a></li>
+        <li><a href="./index.html">Sei lá</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="bento-grid">
+        <div class="item" id="item1">
+          <img src="../img/apple.png" alt="" style="width: 96px" />
+          <div>
+            <h1>Bento Grids</h1>
+            <p>bento@icloud.com</p>
+            <span>iCloud+</span>
+          </div>
+        </div>
+
+        <div class="item" id="item2">
+          <div class="emails-title">
+            <img src="../img/mail.png" alt="" style="width: 32px" />
+            <div>
+              <h1>Mail</h1>
+              <p>Inbox • No unread messages</p>
+            </div>
+          </div>
+          <div class="emails">
+            <div class="left">
+              <div class="email">
+                <div class="email-title">
+                  <h3>Apple</h3>
+                  <p>1/18/20</p>
+                </div>
+                <p>Your invoice</p>
+              </div>
+              <div class="email">
+                <div class="email-title">
+                  <h3>Apple</h3>
+                  <p>4/10/18</p>
+                </div>
+                <p>Two-factor authentication enabled for..</p>
+              </div>
+              <div class="email">
+                <div class="email-title">
+                  <h3>Talking Tom</h3>
+                  <p>8/12/16</p>
+                </div>
+                <p>PLAY NOW! Mars Pop - Bubble Shooter</p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="email">
+                <div class="email-title">
+                  <h3>Talking Tom</h3>
+                  <p>7/25/15</p>
+                </div>
+                <p>New: Mars Pop - Bubble Shooter 🎮</p>
+              </div>
+              <div class="email">
+                <div class="email-title">
+                  <h3>Talking Tom</h3>
+                  <p>5/2/15</p>
+                </div>
+                <p>New Video: Untalking Tom ▶️</p>
+              </div>
+              <div class="email">
+                <div class="email-title">
+                  <h3>Talking Tom</h3>
+                  <p>4/2/16</p>
+                </div>
+                <p>Free gith with any purchase 🎁</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="item3">
+          <div class="drive-title">
+            <img
+              src="../img/drive.png"
+              alt=""
+              style="width: 32px; border-radius: 6px"
+            />
+            <div>
+              <h1>Drive</h1>
+              <p>All Files</p>
+            </div>
+          </div>
+
+          <div class="icons">
+            <div class="left">
+              <div class="file">
+                <img
+                  src="../img/escreve.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Blank Layout</h3>
+                  <p>Pages</p>
+                </div>
+              </div>
+
+              <div class="file">
+                <img
+                  src="../img/pdf.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Document</h3>
+                  <p>PDF</p>
+                </div>
+              </div>
+
+              <div class="file">
+                <img
+                  src="../img/pdf.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Video files</h3>
+                  <p>PDF</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="file">
+                <img
+                  src="../img/pdf.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Document</h3>
+                  <p>PDF</p>
+                </div>
+              </div>
+
+              <div class="file">
+                <img
+                  src="../img/pdf.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Design stuff</h3>
+                  <p>PDF</p>
+                </div>
+              </div>
+
+              <div class="file">
+                <img
+                  src="../img/zip.png"
+                  alt=""
+                  style="width: 16px; height: 16px"
+                />
+                <div>
+                  <h3>Archive</h3>
+                  <p>ZIP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="item4">
+          <div class="drive-title">
+            <img
+              src="../img/notas.png"
+              alt=""
+              style="width: 32px; border-radius: 6px"
+            />
+            <div>
+              <h1>Notes</h1>
+              <p>All iCloud</p>
+            </div>
+          </div>
+          <div class="left">
+            <div class="file-notes">
+              <div>
+                <h3>Shopping list</h3>
+                <div class="note-text">
+                  <span>3/19/23</span>
+                  <p>None</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="file-notes">
+              <div>
+                <h3>New note</h3>
+                <div class="note-text">
+                  <span>10/30/21</span>
+                  <p>No additional text</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="file-notes">
+              <div>
+                <h3>Reading list</h3>
+                <div class="note-text">
+                  <span>10/30/21</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="item5">
+          <div class="app">
+            <img
+              src="../img/drive.png"
+              alt=""
+              style="width: 52px; height: 52px; border-radius: 6px"
+            />
+            <span>Drive</span>
+          </div>
+
+          <div class="app">
+            <img
+              src="../img/keynote.png"
+              alt=""
+              style="width: 52px; height: 52px; border-radius: 6px"
+            />
+            <span>Keynotes</span>
+          </div>
+
+          <div class="app">
+            <img
+              src="../img/notas.png"
+              alt=""
+              style="width: 52px; height: 52px; border-radius: 6px"
+            />
+            <span>Notes</span>
+          </div>
+
+          <div class="app">
+            <img
+              src="../img/contatos.png"
+              alt=""
+              style="width: 52px; height: 52px; border-radius: 6px"
+            />
+            <span>Contacts</span>
+          </div>
+
+          <div class="app">
+            <img
+              src="../img/numbers.png"
+              alt=""
+              style="width: 52px; height: 52px; border-radius: 6px"
+            />
+            <span>Numbers</span>
+          </div>
+        </div>
+
+        <div class="item" id="item6">
+          <div class="drive-title">
+            <img
+              src="../img/escreve.png"
+              alt=""
+              style="width: 32px; border-radius: 6px"
+            />
+            <div>
+              <h1>Pages</h1>
+              <p>No Documents</p>
+            </div>
+          </div>
+          <div class="add-document">
+            <img
+              src="../img/add.png"
+              alt=""
+              style="width: 38px; height: 38px"
+            />
+            <span>Create your first document</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

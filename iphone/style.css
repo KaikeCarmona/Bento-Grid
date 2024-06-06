@@ -1,0 +1,350 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+
+  background-image: url(../img/iphone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 66%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+li {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 200ms;
+}
+
+a:hover {
+  color: #c4b2e8;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 50px;
+  height: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #494949;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .header-logo {
+    width: 30px;
+  }
+}
+
+/* Bento grid */
+.bento-grid {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-gap: 24px;
+
+  margin: 0 30vw;
+
+  height: 90%;
+}
+
+.item {
+  width: 100%;
+  min-width: 296px;
+
+  /* border: 1px solid #000; */
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition: 500ms;
+
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* .item:hover {
+  transform: scale(1.05);
+} */
+
+#item1,
+#item4,
+#item5 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+#item2,
+#item3,
+#item6 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* E-MAILS */
+/* E-MAILS */
+/* E-MAILS */
+#item2 .email-title,
+.emails {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item p {
+  color: #9e9e9e;
+  line-height: 22px;
+}
+
+.left,
+.right {
+  width: 100%;
+  margin-top: 18px;
+
+  padding: 0 24px;
+}
+
+.left p,
+.right p {
+  line-height: 22px;
+  color: #9e9e9e;
+}
+
+.left {
+  border-right: 1px solid #e4ecf7;
+}
+
+.emails-title {
+  padding: 12px 24px;
+
+  background-color: #e4ecf7;
+
+  display: flex;
+  align-items: center;
+}
+
+.emails-title div,
+.drive-title div {
+  margin-left: 12px;
+}
+
+/* ITEM 1 */
+/* ITEM 1 */
+/* ITEM 1 */
+#item1 {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  padding: 24px 24px;
+}
+
+#item1 div {
+  margin-top: 12px;
+}
+
+#item1 h1,
+#item1 span {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#item1 p,
+#item1 span {
+  font-size: 16px;
+  color: #424856;
+}
+
+/* DRIVE */
+/* DRIVE */
+/* DRIVE */
+#item3 .icons {
+  display: flex;
+
+  margin-top: 12px;
+}
+
+.drive-title {
+  display: flex;
+
+  padding: 12px 24px;
+  background-color: #e4ecf7;
+
+  align-items: center;
+}
+
+.file,
+.file-notes .note-text {
+  display: flex;
+
+  align-items: center;
+}
+
+.file-notes {
+  line-height: 22px;
+}
+
+.file-notes .note-text p {
+  margin-left: 8px;
+}
+
+.file div {
+  margin-left: 12px;
+}
+
+/* LISTA DE NOTAS */
+/* LISTA DE NOTAS */
+/* LISTA DE NOTAS */
+#item6 .add-document {
+  display: flex;
+  flex-direction: column;
+
+  height: 65%;
+
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#item6 span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* LISTA DE APLICATIVOS */
+/* LISTA DE APLICATIVOS */
+/* LISTA DE APLICATIVOS */
+#item5 {
+  background-color: rgba(255, 255, 255, 0.35);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 24px;
+
+  padding-left: 18px;
+
+  width: auto;
+}
+
+.app span {
+  margin-top: 8px;
+
+  font-size: 11px;
+  font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c4b2e8; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
